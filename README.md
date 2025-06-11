@@ -46,7 +46,7 @@ flutter run --example
 
 📷 Preview
 
-> Include screenshots or GIFs here
+![Liquid Glass UI Preview](https://raw.githubusercontent.com/prdalai/liquid_glass_ui/main/screenshots/preview.png)
 
 🔧 Coming Soon
 
