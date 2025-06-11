@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0
+
+*   Added a new example showcasing macOS-style widgets (Weather, Calendar, Clock).
+*   Added support for custom background images in the example.
+*   Enabled macOS desktop support for the example application.
+*   Added a screenshots directory with a preview image for the package.
+
 ## 0.1.0
 
 *   Improved pub.dev score by: 
