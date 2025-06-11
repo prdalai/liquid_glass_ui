@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0
+
+*   Updated the `homepage` URL to the correct GitHub repository.
+
 ## 0.2.0
 
 *   Added a new example showcasing macOS-style widgets (Weather, Calendar, Clock).
