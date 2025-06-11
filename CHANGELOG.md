@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.0
+
+*   Added a preview screenshot to the `README.md` for better visibility on pub.dev and GitHub.
+*   Pushed all local changes to the remote repository to resolve `pub.dev` analysis issues.
+
 ## 0.3.0
 
 *   Updated the `homepage` URL to the correct GitHub repository.
