@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:liquid_glass_ui/liquid_glass_ui.dart';
-import 'package:example/beautiful_liquid_example.dart';
+import 'package:example/mac_os_widgets_example.dart';
 
 void main() {
   runApp(const LiquidGlassDemoApp());
@@ -16,7 +16,7 @@ class LiquidGlassDemoApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: ThemeData(brightness: Brightness.light, useMaterial3: true),
       darkTheme: ThemeData(brightness: Brightness.dark, useMaterial3: true),
-      home: const BeautifulLiquidExample(),
+      home: const MacOSWidgetsExample(),
     );
   }
 }
