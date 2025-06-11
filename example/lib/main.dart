@@ -14,14 +14,8 @@ class LiquidGlassDemoApp extends StatelessWidget {
     return MaterialApp(
       title: 'Liquid Glass UI Demo',
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-        brightness: Brightness.light,
-        useMaterial3: true,
-      ),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-        useMaterial3: true,
-      ),
+      theme: ThemeData(brightness: Brightness.light, useMaterial3: true),
+      darkTheme: ThemeData(brightness: Brightness.dark, useMaterial3: true),
       home: const BeautifulLiquidExample(),
     );
   }
@@ -33,9 +27,10 @@ class DemoHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).brightness == Brightness.dark
-          ? Colors.black
-          : Colors.grey.shade100,
+      backgroundColor:
+          Theme.of(context).brightness == Brightness.dark
+              ? Colors.black
+              : Colors.grey.shade100,
       body: Center(
         child: LiquidGlassContainer(
           blur: 18,
@@ -60,4 +55,4 @@ class DemoHomePage extends StatelessWidget {
       ),
     );
   }
-} 
+}

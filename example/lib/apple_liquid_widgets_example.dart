@@ -18,7 +18,10 @@ class AppleLiquidWidgetsExample extends StatelessWidget {
           ),
           // Widgets and Icons Layer
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 48.0),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 24.0,
+              vertical: 48.0,
+            ),
             child: Column(
               children: [
                 // Top Widgets (Weather and Find My)
@@ -34,20 +37,33 @@ class AppleLiquidWidgetsExample extends StatelessWidget {
                           children: const [
                             Text(
                               'San Francisco',
-                              style: TextStyle(color: Colors.white70, fontSize: 12),
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontSize: 12,
+                              ),
                             ),
                             Text(
                               '53°',
-                              style: TextStyle(color: Colors.white, fontSize: 36, fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 36,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                             Text(
                               'Partly Cloudy H:56° L:50°',
-                              style: TextStyle(color: Colors.white70, fontSize: 12),
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontSize: 12,
+                              ),
                             ),
                             SizedBox(height: 8),
                             Text(
                               'Weather',
-                              style: TextStyle(color: Colors.white54, fontSize: 10),
+                              style: TextStyle(
+                                color: Colors.white54,
+                                fontSize: 10,
+                              ),
                             ),
                           ],
                         ),
@@ -64,26 +80,42 @@ class AppleLiquidWidgetsExample extends StatelessWidget {
                           children: const [
                             Text(
                               'Now',
-                              style: TextStyle(color: Colors.white70, fontSize: 12),
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontSize: 12,
+                              ),
                             ),
                             Row(
                               children: [
-                                CircleAvatar(backgroundColor: Colors.white, radius: 10), // Placeholder for person icon
+                                CircleAvatar(
+                                  backgroundColor: Colors.white,
+                                  radius: 10,
+                                ), // Placeholder for person icon
                                 SizedBox(width: 8),
                                 Text(
                                   'Marina Green',
-                                  style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                               ],
                             ),
                             Text(
                               'San Francisco, CA',
-                              style: TextStyle(color: Colors.white70, fontSize: 12),
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontSize: 12,
+                              ),
                             ),
                             SizedBox(height: 8),
                             Text(
                               'Find My',
-                              style: TextStyle(color: Colors.white54, fontSize: 10),
+                              style: TextStyle(
+                                color: Colors.white54,
+                                fontSize: 10,
+                              ),
                             ),
                           ],
                         ),
@@ -95,24 +127,49 @@ class AppleLiquidWidgetsExample extends StatelessWidget {
                 // Main App Grid
                 Expanded(
                   child: GridView.builder(
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 4,
-                      crossAxisSpacing: 16,
-                      mainAxisSpacing: 16,
-                    ),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 4,
+                          crossAxisSpacing: 16,
+                          mainAxisSpacing: 16,
+                        ),
                     itemCount: 16, // Example: 16 app icons
                     itemBuilder: (context, index) {
                       List<IconData> icons = [
-                        Icons.video_call, Icons.calendar_today, Icons.photo_library, Icons.camera_alt,
-                        Icons.mail, Icons.note, Icons.alarm, Icons.access_alarm,
-                        Icons.article, Icons.tv, Icons.podcasts, Icons.shopping_bag,
-                        Icons.map, Icons.favorite, Icons.account_balance_wallet, Icons.settings,
+                        Icons.video_call,
+                        Icons.calendar_today,
+                        Icons.photo_library,
+                        Icons.camera_alt,
+                        Icons.mail,
+                        Icons.note,
+                        Icons.alarm,
+                        Icons.access_alarm,
+                        Icons.article,
+                        Icons.tv,
+                        Icons.podcasts,
+                        Icons.shopping_bag,
+                        Icons.map,
+                        Icons.favorite,
+                        Icons.account_balance_wallet,
+                        Icons.settings,
                       ];
                       List<String> labels = [
-                        'FaceTime', 'Calendar', 'Photos', 'Camera',
-                        'Mail', 'Notes', 'Reminders', 'Clock',
-                        'News', 'TV', 'Podcasts', 'App Store',
-                        'Maps', 'Health', 'Wallet', 'Settings',
+                        'FaceTime',
+                        'Calendar',
+                        'Photos',
+                        'Camera',
+                        'Mail',
+                        'Notes',
+                        'Reminders',
+                        'Clock',
+                        'News',
+                        'TV',
+                        'Podcasts',
+                        'App Store',
+                        'Maps',
+                        'Health',
+                        'Wallet',
+                        'Settings',
                       ];
                       return LiquidGlassContainer(
                         blur: 30,
@@ -121,11 +178,18 @@ class AppleLiquidWidgetsExample extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(icons[index], size: 36, color: Colors.white), // App Icon
+                            Icon(
+                              icons[index],
+                              size: 36,
+                              color: Colors.white,
+                            ), // App Icon
                             const SizedBox(height: 4),
                             Text(
                               labels[index],
-                              style: const TextStyle(color: Colors.white, fontSize: 10),
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 10,
+                              ),
                               textAlign: TextAlign.center,
                             ),
                           ],
@@ -138,8 +202,13 @@ class AppleLiquidWidgetsExample extends StatelessWidget {
                 LiquidGlassContainer(
                   blur: 30,
                   opacity: 0.4,
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                  borderRadius: BorderRadius.circular(30), // Rounded corners for the dock
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
+                  ),
+                  borderRadius: BorderRadius.circular(
+                    30,
+                  ), // Rounded corners for the dock
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: const [
@@ -157,4 +226,4 @@ class AppleLiquidWidgetsExample extends StatelessWidget {
       ),
     );
   }
-} 
+}
